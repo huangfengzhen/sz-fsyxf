@@ -1,0 +1,70 @@
+
+ /* 首页自定 */
+ body{
+  	background-color: #ddd;
+ }
+ .skin-blue .main-header .logo {
+	background-color: #00a7d0;
+	color: #fff;
+	border-bottom: 0 solid transparent;
+	font-size:16px;
+}
+.skin-blue .main-header .navbar {
+ 	background-color: #00c0ef;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  	background-color: #00a7d0;
+}
+.navbar-custom-menu>.navbar-nav>li{
+ 	 font-size:16px;
+}
+.fa-pad{
+ 	 padding-left:10px;
+}
+.sidebar-menu>li {
+ 	border-bottom:1px solid #1e282c;
+}
+ .treeview{
+   	font-size:16px;
+ }
+ .content-header>.breadcrumb {
+	position: relative;
+	margin-top: 5px;
+	top: -5px;
+	left:0;
+	float: none;
+	background: #f3f3f3;
+	padding-left: 10px;
+}
+.cus-wrapbox{
+	  background:#ddd;
+	  padding: 10px;
+}
+.con-wrap{
+  	margin-top:10px;
+}
+.info-box {
+	display: block;
+	min-height: 90px;
+	width: 100%;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	background: #f3f3f3;
+}
+.content-header{
+ 	 padding:0;
+}
+#cus-echarts-left{
+	background:#fff;
+}
+
+#cus-echarts-left .radio-title, #radio-box .radio-title2 {
+    height: 52px;
+    line-height: 52px;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
