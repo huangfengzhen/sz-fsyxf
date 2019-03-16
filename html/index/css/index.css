@@ -68,3 +68,23 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
+.row .col-sm-6 {
+    height: 325px;
+    /* min-width: 533px; */
+    background: #fff;
+    margin-bottom: 10px;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+#fire-hazard,#remote-monitoring{
+	background:#fff;
+	width: 100%;
+	height:325px;
+	
+	padding:20px;
+}
+subtext{
+	padding:20px;
+}

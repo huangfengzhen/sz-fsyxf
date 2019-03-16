@@ -1,23 +1,72 @@
-$(function () {
-	var echarts = require('echarts');
-
-	// 基于准备好的dom，初始化echarts实例
-	var myChart = echarts.init(document.getElementById('cus-main'));
-	// 绘制图表
-	myChart.setOption({
+$(function(){
+	// 远程监控火警显示
+	var myremote = echarts.init(document.getElementById('remote-monitoring'));
+	option = {
 		title: {
-			text: 'ECharts 入门示例'
+			text: '远程监控火警显示',
 		},
-		tooltip: {},
+		tooltip: {
+			trigger: 'axis'
+		},
+		legend: {
+			data:['误报火警','确认火警']
+		},
+		grid: {
+			left: '3%',
+			right: '4%',
+			bottom: '3%',
+			containLabel: true
+		},
+	
 		xAxis: {
-			data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
+			type: 'category',
+			boundaryGap: false,
+			data: ['11','12','01','02','03','04','05']
 		},
-		yAxis: {},
+		yAxis: {
+			type: 'value'
+		},
+		series: [
+			{
+				name:'误报火警',
+				type:'line',
+				stack: '总量',
+				data:[0, 0, 0, 0, 0, 0, 0]
+			},
+			{
+				name:'确认火警',
+				type:'line',
+				stack: '总量',
+				data:[0, 0, 0, 0, 0, 0, 0]
+			}
+		]
+	};
+	myremote.setOption(option);
+	// 远程监控火警显示  
+	// 重大火灾隐患显示
+	var myhazard = echarts.init(document.getElementById('fire-hazard'));
+	var option = {
+		title: {
+			text: '业务指标', //标题文本内容
+		},
+		toolbox: { //可视化的工具箱
+			show: true
+			
+		},
+		tooltip: { //弹窗组件
+			formatter: "{a} <br/>{b} : {c}%"
+		},
 		series: [{
-			name: '销量',
-			type: 'bar',
-			data: [5, 20, 36, 10, 10, 20]
+			name: '业务指标',
+			type: 'gauge',
+			detail: {formatter:'{value}%'},
+			data: [{value: 0, name: '暂无'}]
 		}]
-	});
+
+		};
+
+		
+	myhazard.setOption(option);
 
 })
+
