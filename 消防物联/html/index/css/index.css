@@ -1,0 +1,112 @@
+
+ /* 首页自定 */
+ body{
+  	background-color: #ddd;
+ }
+ .skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #e3e7ec;
+}
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li.menu-open>a {
+    color: #000;
+	background: #eaedf1;	/* 这是主菜单hover上去的背景 */
+}
+.skin-blue .sidebar a {
+	color: #000;
+	font-weight: 500;
+}
+.skin-blue .sidebar-menu>li>.treeview-menu {
+	color:#000;
+	background: #eaedf1;/* 这是子菜单的背景 */
+}
+.skin-blue .sidebar-menu .treeview-menu>li.active>a, .skin-blue .sidebar-menu .treeview-menu>li>a:hover {
+    color: #0e0e0e;/* 这是子菜单hover的字体*/
+}
+.skin-blue .sidebar a:hover{
+	color:#555;
+	background:#eaedf1;
+}
+.skin-blue .main-header .logo {
+	background-color: #00a7d0;/*logo的背景色*/
+	color: #fff;
+	border-bottom: 0 solid transparent;
+	font-size:16px;
+}
+.skin-blue .main-header .logo:hover {
+	background-color: #00a7d0;
+}
+.skin-blue .main-header .navbar {
+ 	background-color: #00a7d0;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+  	background-color:#02b0db;
+}
+/* .navbar-custom-menu>.navbar-nav>li{
+ 	 font-size:14px;
+} */
+.fa-pad{
+ 	 padding-left:10px;
+}
+.sidebar-menu>li {
+ 	border-bottom:1px solid #eee;
+}
+ /* .treeview{
+   	font-size:16px;
+ } */
+ .content-header>.breadcrumb {
+	position: relative;
+	margin-top: 5px;
+	top: -5px;
+	left:0;
+	float: none;
+	background: #f3f3f3;
+	padding-left: 10px;
+}
+.cus-wrapbox{
+	  background:#ddd;
+	  padding: 10px;
+}
+.con-wrap{
+  	margin-top:10px;
+}
+.info-box {
+	display: block;
+	min-height: 90px;
+	width: 100%;
+	border-radius: 2px;
+	margin-bottom: 15px;
+	background: #f3f3f3;
+}
+.content-header{
+ 	 padding:0;
+}
+#cus-echarts-left{
+	background:#fff;
+}
+#cus-echarts-left .radio-title, #radio-box .radio-title2 {
+    height: 52px;
+    line-height: 52px;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.row .col-lg-6 {
+    height: 325px;
+    /* min-width: 533px; */
+    background: #fff;
+    margin-bottom: 10px;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+#fire-hazard,#remote-monitoring{
+	background:#fff;
+	width: 100%;
+	height:325px;
+	
+	padding:20px;
+}
+subtext{
+	padding:20px;
+}

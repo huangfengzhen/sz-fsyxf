@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>echasrt示例</title>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+</head>
+<body>
+  <div id="remote-monitoring" style="width: 600px;height:400px;border:1px solid #ddd;"></div>
+  <script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('remote-monitoring'));
+    option = {
+        title: {
+            text: '远程监控火警显示'，
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['误报火警','确认火警']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['11','12','01','02','03','04','05']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+                name:'误报火警',
+                type:'line',
+                stack: '总量',
+                data:[0, 0, 0, 0, 0, 0, 0]
+            },
+            {
+                name:'确认火警',
+                type:'line',
+                stack: '总量',
+                data:[0, 0, 0, 0, 0, 0, 0]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+  </script>
+  
+</body>
+</html>
